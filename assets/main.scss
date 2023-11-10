@@ -3,6 +3,85 @@
 
 @import "minima";
 
+.site-title {
+  font-weight: 400;
+}
+
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  &:visited {
+    color: darken($brand-color, 15%);
+  }
+
+  &:hover {
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  .social-media-list &:hover {
+    text-decoration: none;
+
+    .username {
+      text-decoration: underline;
+    }
+  }
+}
+
 .post-link {
   color: #424242;
+}
+
+.hm-post-title {
+  font-size: 32px;
+  letter-spacing: normal;
+  line-height: 1;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.post-preview {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+}
+
+.site-title:hover, 
+.page-link:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  font-size: 15px;
+  color: $grey-color;
+  text-align: center;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.footer-subscribe {
+  list-style: none;
+  padding-top: 0;
+}
+
+.footer-col-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-col {
+  float: none;
+}
+
+.footer-col-1, 
+.footer-col-2, 
+.footer-col-3 {
+  width: 100%;
+  text-align: center;
+}
+
+.li-email, 
+.li-rss {
+  padding-top: 5px;
 }

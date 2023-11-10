@@ -10,6 +10,8 @@ twitter_username: charlesdungy
 github_username: charlesdungy
 linkedin_username: charlesdungy
 rss: RSS
+show_excerpts: true
+copyright: Charles Dungy
 
 # Build settings
 theme: minima
