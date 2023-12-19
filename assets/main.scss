@@ -1,10 +1,28 @@
 ---
 ---
 
-@import "minima";
+@import 'minima';
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.site-header {
+  border: 0;
+}
 
 .site-title {
-  font-weight: 400;
+  font-size: 24px;
+}
+
+.site-nav .page-link {
+  font-size: 16px;
+}
+
+.site-footer {
+  padding: 10px;
+  border: 0;
 }
 
 a {
@@ -36,10 +54,10 @@ a {
 .hm-post-title {
   font-size: 32px;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 1.3;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 
@@ -47,9 +65,9 @@ a {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
 }
 
-.site-title:hover, 
+.site-title:hover,
 .page-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .footer-copyright {
@@ -57,31 +75,5 @@ a {
   color: $grey-color;
   text-align: center;
   margin: 0;
-  padding-top: 5px;
-}
-
-.footer-subscribe {
-  list-style: none;
-  padding-top: 0;
-}
-
-.footer-col-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-col {
-  float: none;
-}
-
-.footer-col-1, 
-.footer-col-2, 
-.footer-col-3 {
-  width: 100%;
-  text-align: center;
-}
-
-.li-email, 
-.li-rss {
   padding-top: 5px;
 }
