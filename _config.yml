@@ -1,7 +1,7 @@
 # Site settings
 title: Charles Dungy
 name: Charles Dungy
-email: todo@todo.com
+email: charlesdungy [at] gmail [dot] com
 contact: Contact
 description: I'm Charles Dungy, a software developer, living in Raleigh, North Carolina.
 baseurl: ''
@@ -17,3 +17,17 @@ copyright: Charles Dungy
 theme: minima
 plugins:
   - jekyll-feed
+
+# Items to ignore
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - commands.txt
